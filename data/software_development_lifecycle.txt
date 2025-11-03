@@ -1,0 +1,55 @@
+Q1: What is SDLC?
+A1: SDLC (Software Development Life Cycle) is the process of planning, developing, testing, deploying, and maintaining software systematically.
+
+Q2: What are the main phases of SDLC?
+A2: 
+1. Requirement Gathering  
+2. System Design  
+3. Implementation (Development)  
+4. Testing  
+5. Deployment  
+6. Maintenance
+
+Q3: Why is SDLC important?
+A3: It ensures software is delivered on time, meets quality standards, and satisfies user needs.
+
+Q4: What are common SDLC models?
+A4: Waterfall, Agile, Spiral, V-Model, and Iterative models.
+
+Q5: What is the Waterfall model?
+A5: A linear approach where each phase is completed before moving to the next.
+
+Q6: What is the Agile model?
+A6: An iterative approach where work is done in short cycles (sprints) with continuous feedback.
+
+Q7: What are the advantages of Agile?
+A7: Flexibility, fast feedback, early delivery, and improved customer satisfaction.
+
+Q8: What is Scrum in Agile?
+A8: A framework in Agile that organizes work into sprints (usually 2–4 weeks) with defined roles like Scrum Master, Product Owner, and Development Team.
+
+Q9: What is a sprint?
+A9: A short, time-boxed period where a specific set of work is completed in Agile projects.
+
+Q10: What is the difference between Agile and Waterfall?
+A10: Waterfall is sequential and rigid; Agile is iterative and adaptive to change.
+
+Q11: What happens in the testing phase?
+A11: QA engineers verify that the software works as expected through unit, integration, and system tests.
+
+Q12: What happens in the deployment phase?
+A12: Software is released to users or production environments.
+
+Q13: What is maintenance in SDLC?
+A13: Fixing bugs, improving performance, or updating features after deployment.
+
+Q14: What are functional and non-functional requirements?
+A14: Functional define system behavior; non-functional describe system quality (e.g., performance, security, scalability).
+
+Q15: What is CI/CD in modern SDLC?
+A15: Continuous Integration and Continuous Deployment — automating code integration, testing, and deployment for faster delivery.
+Example tools: GitHub Actions, Jenkins.
+
+Q16: What are version control systems?
+A16: Tools that manage code changes and collaboration.
+Example: Git.

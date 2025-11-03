@@ -1,0 +1,66 @@
+Q1: What is Object-Oriented Programming (OOP)?
+A1: OOP is a programming paradigm based on the concept of objects containing data and behavior. It helps organize code for reusability and scalability.
+
+Q2: What are the four pillars of OOP?
+A2: Encapsulation, Abstraction, Inheritance, and Polymorphism.
+
+Q3: What is Encapsulation?
+A3: It means bundling data and related methods together in a class and restricting direct access using private or protected modifiers.
+Example:
+class Car {
+  private speed = 0;
+  accelerate() { this.speed += 10; }
+}
+
+Q4: What is Abstraction?
+A4: Hiding complex implementation details and exposing only necessary features.
+Example:
+abstract class Shape {
+  abstract area(): number;
+}
+
+Q5: What is Inheritance?
+A5: When one class derives properties and methods from another class.
+Example:
+class Animal { eat() {} }
+class Dog extends Animal { bark() {} }
+
+Q6: What is Polymorphism?
+A6: It allows the same method name to behave differently based on the object.
+Example:
+class Bird { speak() { return "Chirp"; } }
+class Dog { speak() { return "Bark"; } }
+
+Q7: What are constructors?
+A7: Special methods used to initialize object properties when an instance is created.
+
+Q8: What is the difference between a class and an object?
+A8: A class is a blueprint; an object is an instance of that blueprint.
+
+Q9: What is method overriding?
+A9: Redefining a parent class method in a child class.
+
+Q10: What is method overloading?
+A10: Having multiple methods with the same name but different parameters (not directly supported in JS, simulated by optional params).
+
+Q11: What are access modifiers?
+A11: Keywords that set the visibility of class members, e.g., public, private, protected.
+
+Q12: What is a static method?
+A12: A method that belongs to the class rather than an instance.
+Example:
+class MathUtils {
+  static add(a, b) { return a + b; }
+}
+
+Q13: What is composition in OOP?
+A13: Building complex objects by combining simpler ones instead of using inheritance.
+Example:
+class Engine {}
+class Car { constructor(engine) { this.engine = engine; } }
+
+Q14: What is the difference between aggregation and composition?
+A14: Composition means strong ownership (object cannot exist without parent); aggregation means weak ownership.
+
+Q15: Why is OOP important?
+A15: It improves modularity, maintainability, and code reuse.

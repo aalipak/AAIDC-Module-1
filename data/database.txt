@@ -1,0 +1,65 @@
+Q1: What is a database?
+A1: A structured way to store, organize, and manage data for efficient retrieval and manipulation.
+
+Q2: Difference between SQL and NoSQL databases?
+A2: SQL uses structured tables and relationships (relational), while NoSQL stores unstructured or semi-structured data (non-relational).
+
+Q3: What is MongoDB?
+A3: A NoSQL database that stores data as JSON-like documents inside collections.
+
+Q4: What is SQL?
+A4: Structured Query Language — used to query and manage relational databases.
+
+Q5: How do you insert data in MongoDB?
+A5:
+db.users.insertOne({ name: "Aali", age: 22 });
+
+Q6: How do you retrieve data in MongoDB?
+A6:
+db.users.find({ age: { $gt: 18 } });
+
+Q7: What is a collection in MongoDB?
+A7: A group of documents (similar to a table in SQL).
+
+Q8: How do you connect MongoDB with Node.js?
+A8:
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGO_URI);
+
+Q9: What is a schema in Mongoose?
+A9: Defines the structure of documents in a collection.
+Example:
+const userSchema = new mongoose.Schema({ name: String, age: Number });
+
+Q10: How do you insert data in SQL?
+A10:
+INSERT INTO users (name, age) VALUES ('Aali', 22);
+
+Q11: How do you retrieve data in SQL?
+A11:
+SELECT * FROM users WHERE age > 18;
+
+Q12: What is a primary key?
+A12: A unique identifier for each record in a SQL table.
+
+Q13: What is a foreign key?
+A13: A key used to link two related tables in SQL.
+
+Q14: What are indexes in databases?
+A14: Indexes speed up search queries but may slow down write operations.
+
+Q15: What is normalization?
+A15: The process of organizing data to reduce redundancy and improve data integrity.
+
+Q16: What is an aggregate in MongoDB?
+A16: A pipeline to process and transform data.
+Example:
+db.sales.aggregate([{ $group: { _id: "$category", total: { $sum: "$amount" } } }]);
+
+Q17: How do you update a record in SQL?
+A17:
+UPDATE users SET age = 23 WHERE name = 'Aali';
+
+Q18: How do you delete a record in MongoDB?
+A18:
+db.users.deleteOne({ name: "Aali" });

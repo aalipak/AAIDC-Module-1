@@ -1,0 +1,66 @@
+Q1: What is React?
+A1: React is a JavaScript library for building fast and interactive user interfaces using components.
+
+Q2: What are components in React?
+A2: Reusable building blocks that represent parts of a UI. There are functional and class components.
+Example:
+function Welcome() { return <h1>Hello!</h1>; }
+
+Q3: What is JSX?
+A3: JSX (JavaScript XML) allows writing HTML-like syntax inside JavaScript.
+Example:
+const name = "Aali";
+return <h1>Hello {name}</h1>;
+
+Q4: What are props?
+A4: Props are read-only inputs passed from parent to child components.
+Example:
+function Greet({ name }) { return <p>Hello {name}</p>; }
+
+Q5: What is state in React?
+A5: State stores component data that can change over time.
+Example:
+const [count, setCount] = useState(0);
+
+Q6: What is the difference between props and state?
+A6: Props are external and read-only; state is internal and mutable.
+
+Q7: What are hooks in React?
+A7: Hooks let you use state and lifecycle features in functional components. Common hooks: `useState`, `useEffect`, `useContext`.
+
+Q8: How does useEffect work?
+A8: It runs side effects (like fetching data) after rendering.
+Example:
+useEffect(() => { fetchData(); }, []);
+
+Q9: What is conditional rendering?
+A9: Rendering elements based on a condition.
+Example:
+{isLoggedIn ? <Dashboard /> : <Login />}
+
+Q10: What is lifting state up?
+A10: Moving shared state to the nearest common parent component.
+
+Q11: What are controlled components?
+A11: Components where form input values are controlled by React state.
+Example:
+<input value={name} onChange={e => setName(e.target.value)} />
+
+Q12: What is virtual DOM?
+A12: A lightweight copy of the real DOM that React uses to efficiently update UI changes.
+
+Q13: What are keys in React lists?
+A13: Unique identifiers for list items to help React track elements during re-renders.
+
+Q14: What is React Router?
+A14: A library for handling routing/navigation in React apps.
+Example:
+<Routes>
+  <Route path="/home" element={<Home />} />
+</Routes>
+
+Q15: What is the purpose of useRef?
+A15: To directly access or modify DOM elements without re-rendering.
+Example:
+const inputRef = useRef();
+<input ref={inputRef} />

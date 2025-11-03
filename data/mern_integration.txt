@@ -1,0 +1,87 @@
+Q1: What is the MERN stack?
+A1: MERN stands for MongoDB, Express.js, React.js, and Node.js — a full-stack JavaScript framework for building web apps.
+
+Q2: How do the MERN components connect?
+A2: React (frontend) → Express/Node (backend API) → MongoDB (database).
+
+Q3: What is the typical data flow in a MERN app?
+A3: 
+User → React UI → API call (Axios/Fetch) → Express route → Database query → Response back to UI.
+
+Q4: How do you connect React frontend with Node backend?
+A4:
+In React:
+fetch('http://localhost:5000/api/users')
+.then(res => res.json())
+.then(data => console.log(data));
+
+In Node:
+app.get('/api/users', (req, res) => res.json(users));
+
+Q5: How do you connect Node.js with MongoDB?
+A5:
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGO_URI);
+
+Q6: What is the folder structure for a MERN project?
+A6:
+root/
+ ├── client/ (React)
+ ├── server/ (Node + Express)
+ ├── models/ (MongoDB schemas)
+ ├── routes/ (API endpoints)
+
+Q7: How do you create a REST API route in Express?
+A7:
+app.post('/api/users', async (req, res) => {
+  const user = new User(req.body);
+  await user.save();
+  res.send(user);
+});
+
+Q8: How do you call this API from React?
+A8:
+await axios.post('/api/users', { name: "Aali" });
+
+Q9: How do you manage environment variables in both frontend and backend?
+A9:
+- Backend: `.env` + `dotenv` package  
+- Frontend: `.env` with variables prefixed by `REACT_APP_`
+
+Q10: What is proxy in React?
+A10: Used to forward API requests from React to backend during development.
+Example: Add `"proxy": "http://localhost:5000"` in package.json.
+
+Q11: What is CORS and how do you fix it?
+A11: Cross-Origin Resource Sharing — allows React (port 3000) to access Node (port 5000).
+Example:
+const cors = require('cors');
+app.use(cors());
+
+Q12: How do you handle CRUD operations in MERN?
+A12:
+- Create → POST  
+- Read → GET  
+- Update → PUT  
+- Delete → DELETE  
+
+Example:
+app.put('/api/users/:id', async (req, res) => {
+  const user = await User.findByIdAndUpdate(req.params.id, req.body);
+  res.json(user);
+});
+
+Q13: What is JWT authentication?
+A13: JSON Web Tokens are used to secure routes and verify user identity.
+Example:
+const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+
+Q14: How do you deploy a MERN app?
+A14: 
+- Frontend: Vercel/Netlify  
+- Backend: Render/Railway/Heroku  
+- DB: MongoDB Atlas  
+Ensure correct environment variables and build paths.
+
+Q15: What is state management in a MERN app?
+A15: Managing data between frontend and backend using React state, Context API, or Redux.

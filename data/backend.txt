@@ -1,0 +1,63 @@
+Q1: What is Node.js?
+A1: Node.js is a runtime environment that allows JavaScript to run on the server side using the V8 engine.
+
+Q2: Why use Node.js for backend?
+A2: It's fast, scalable, event-driven, and non-blocking — perfect for I/O-heavy apps.
+
+Q3: What is Express.js?
+A3: A lightweight Node.js framework used to build web servers and APIs easily.
+
+Q4: How do you create a simple Express server?
+A4:
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Hello World'));
+app.listen(3000);
+
+Q5: What is middleware in Express?
+A5: Functions that execute between request and response, used for logging, auth, etc.
+Example:
+app.use((req, res, next) => { console.log(req.method); next(); });
+
+Q6: What is the difference between app.use() and app.get()?
+A6: `app.use()` is for middleware or routes for all methods, while `app.get()` handles only GET requests.
+
+Q7: What is REST API?
+A7: REST (Representational State Transfer) is an architecture style for building APIs using HTTP methods like GET, POST, PUT, DELETE.
+
+Q8: How do you send JSON data in a response?
+A8:
+app.get('/user', (req, res) => {
+  res.json({ name: "Aali", role: "Developer" });
+});
+
+Q9: How do you handle POST requests in Express?
+A9:
+app.use(express.json());
+app.post('/user', (req, res) => res.send(req.body));
+
+Q10: What is the purpose of body-parser or express.json()?
+A10: To parse incoming JSON request bodies so they can be accessed via `req.body`.
+
+Q11: What are environment variables in Node.js?
+A11: Variables stored outside code (in `.env`) for configuration.
+Example:
+require('dotenv').config();
+const PORT = process.env.PORT;
+
+Q12: What is asynchronous programming in Node.js?
+A12: Using callbacks, promises, or async/await to handle tasks that take time (like API calls) without blocking the main thread.
+
+Q13: What is error handling middleware?
+A13: A special middleware that catches and handles errors.
+Example:
+app.use((err, req, res, next) => res.status(500).send(err.message));
+
+Q14: How do you connect Node.js with a database?
+A14: Using database drivers or ORMs like Mongoose for MongoDB or Sequelize for SQL.
+
+Q15: What is CORS and how do you enable it?
+A15: Cross-Origin Resource Sharing — allows APIs to be accessed from other domains.
+Example:
+const cors = require('cors');
+app.use(cors());

@@ -1,0 +1,58 @@
+Q1: What is Software Architecture?
+A1: It defines the structure of a software system — including components, relationships, and design principles that guide development.
+
+Q2: Why is software architecture important?
+A2: It ensures scalability, maintainability, and performance, and helps teams manage complexity.
+
+Q3: What are architectural patterns?
+A3: Reusable design solutions like MVC, Microservices, Layered, and Event-Driven Architecture.
+
+Q4: What is the MVC pattern?
+A4: Model-View-Controller separates the app into:
+- Model: Data & logic
+- View: UI
+- Controller: Handles input & communication between Model and View.
+
+Q5: What is a monolithic architecture?
+A5: A single large codebase where all components (UI, business logic, database) are tightly coupled.
+
+Q6: What is microservices architecture?
+A6: Breaking an app into small, independent services that communicate through APIs.
+
+Q7: What is an API Gateway?
+A7: A single entry point for managing and routing requests to multiple backend services.
+
+Q8: What is middleware architecture?
+A8: A layer between OS and applications that manages communication, authentication, or logging.
+
+Q9: What is client-server architecture?
+A9: A model where the client requests resources and the server provides responses.
+
+Q10: What is a layered architecture?
+A10: Divides an app into layers such as presentation, business, and data access for better separation of concerns.
+
+Q11: What is a service-oriented architecture (SOA)?
+A11: Systems are designed as independent services that communicate using standard protocols like HTTP or SOAP.
+
+Q12: What are design principles in architecture?
+A12: Principles like SOLID, DRY (Don’t Repeat Yourself), and KISS (Keep It Simple, Stupid).
+
+Q13: What is dependency injection?
+A13: A design pattern where dependencies are provided from outside instead of being created inside a class.
+Example (Node.js):
+class UserService { constructor(db) { this.db = db; } }
+
+Q14: What is the difference between architecture and design?
+A14: Architecture focuses on high-level structure; design focuses on low-level implementation details.
+
+Q15: What are system scalability types?
+A15: 
+- Vertical scaling: Adding more power (CPU/RAM).
+- Horizontal scaling: Adding more servers.
+
+Q16: What is a distributed system?
+A16: A system where components are located on different networked computers but work together as one.
+
+Q17: What is caching and why is it used?
+A17: Storing frequently used data temporarily to reduce load times and improve performance.
+Example: Redis or in-memory caching.
