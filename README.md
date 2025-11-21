@@ -45,9 +45,9 @@ The system efficiently handles document domain knowledge through semantic chunki
 
 ## Technical Implementation
 
-### Architecture
+### 🧩 Architecture
 
-The system is built using a RAG (Retrieval-Augmented Generation) architecture:
+The system follows a **RAG (Retrieval-Augmented Generation)** architecture composed of the following layers:
 
 1. **Document Processing**
    - Loads technical interview content from structured text files
@@ -68,12 +68,12 @@ The system is built using a RAG (Retrieval-Augmented Generation) architecture:
 
 ```
 data/
-├── backend.txt          # Backend development concepts
-├── database.txt        # Database systems and design
-├── frontend.txt        # Frontend development topics
-├── mern_integration.txt # MERN stack implementation
-├── oop.txt             # Object-oriented programming
-├── software_architecture.txt # System design principles
+├── backend.txt                        # Backend development concepts
+├── database.txt                       # Database systems and design
+├── frontend.txt                       # Frontend development topics
+├── mern_integration.txt               # MERN stack implementation
+├── oop.txt                            # Object-oriented programming
+├── software_architecture.txt          # System design principles
 └── software_development_lifecycle.txt # SDLC processes
 ```
 
@@ -148,7 +148,7 @@ data/
   - Groq API key
   - Google AI API key
 
-### Installation
+### 🛠️ Installation
 
 1. **Clone the repository:**
    ```bash
@@ -156,20 +156,21 @@ data/
    cd interview-simulator
    ```
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Install dependencies
+pip install -r requirements.txt
+```
 
-3. **Configure API key:**
-   Create a `.env` file and add your chosen API key:
-   ```env
-   OPENAI_API_KEY=your_key_here
-   # or
-   GROQ_API_KEY=your_key_here
-   # or
-   GOOGLE_API_KEY=your_key_here
-   ```
+### ⚙️ Configure Environment Variables
+
+Create a `.env` file in the root directory and add your API key:
+
+```bash
+OPENAI_API_KEY=your_key_here
+# or
+GROQ_API_KEY=your_key_here
+# or
+GOOGLE_API_KEY=your_key_here
+```
 
 ## Future Enhancements
 
@@ -332,7 +333,7 @@ for query in test_queries:
 
 ## Contributing
 
-We welcome contributions to improve the interview simulator! Please feel free to:
+Contributions are welcome! To contribute:
 
 1. **Fork the repository**
 2. **Create a feature branch** (`git checkout -b feature/enhancement`)
@@ -349,7 +350,7 @@ We welcome contributions to improve the interview simulator! Please feel free to
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
